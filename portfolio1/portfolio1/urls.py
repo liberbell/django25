@@ -25,4 +25,4 @@ urlpatterns = [
     # path('taro', jobs.views.taro, name='taro'),
     path('', jobs.views.homepage, name='home'),
 
-] + static(settings.STATIC_URL, settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
