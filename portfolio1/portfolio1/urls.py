@@ -24,6 +24,7 @@ urlpatterns = [
     # path(r'', jobs.views.home, name='home'),
     # path('taro', jobs.views.taro, name='taro'),
     path('', jobs.views.homepage, name='home'),
+    path('jobs/<int:job._id>', jobs.views.detal, name='detail'),
 
 ]
 
